@@ -11,12 +11,21 @@ import netflixWitcher from './images/netflixWitcher.png'
 function App() {
   return (
     <div className="images">
-    <img  src={netflixFate} className="image1" alt=""/>
-    <img  src={netflixGambit} className="image2" alt=""/>
-    <img  src={netflixOutside} className="image3" alt=""/>
-    <img  src={netflixStarTrek} className="image4" alt=""/>
-    <img  src={netflixWitcher} className="image5" alt=""/>
+    <Poster title={netflixFate}/>
+    <Poster title={netflixGambit}/>
+    <Poster title={netflixOutside}/>
+    <Poster title={netflixStarTrek}/>
+    <Poster title={netflixWitcher}/>
     </div>
+  )
+}
+
+function Poster(props) {
+  console.log(props)
+  return (
+    <>
+    <img src={props.title} alt=""/>
+  </>
   )
 }
 
