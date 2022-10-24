@@ -21,65 +21,39 @@ function App() {
   return (
     <>
       <div className="images">
-        <div>
         <Poster title={netflixFate} />
-        </div>
-        <div>
         <Poster title={netflixGambit} />
-        </div>
-        <div>
         <Poster title={netflixOutside} />
-        </div>
-        <div>
         <Poster title={netflixStarTrek} />
-        </div>
-        <div>
         <Poster title={netflixWitcher} />
-        </div>
       </div>
       <div className="bbcarticles">
-        <div className="bbcarticle">
         <Bbc
           image={bbcMorgan}
           headline={"this is the headline"}
           article={"this is the article"}
         />
-        </div>
-        <div className="bbcarticle">
         <Bbc
           image={bbcPandemic}
           headline={"this is the headline"}
           article={"this is the article"}
         />
-        </div>
-        <div className="bbcarticle">
         <Bbc
           image={bbcPay}
           headline={"this is the headline"}
           article={"this is the article"}
         />
-        </div>
-        <div className="bbcarticle">
         <Bbc
           image={bbcUnilever}
           headline={"this is the headline"}
           article={"this is the article"}
           />
           </div>
-          </div>
           <div className="airbnb">
-            <div className="airbnbitems">
             <Airbnb image={airbnbHome} bnbtitle={<b>Entire Homes</b>}/>
-            </div>
-            <div className="airbnbitems">
             <Airbnb image={airbnbUnique} bnbtitle={<b>Unique Stays</b>}/>
-            </div>
-            <div className="airbnbitems">
             <Airbnb image={airbnbCabin} bnbtitle={<b>Cabins and cottages</b>}/>
-            </div>
-            <div className="airbnbitems">
             <Airbnb image={airbnbPets} bnbtitle={<b>Pets allowed</b>}/>
-            </div>
           </div>
         </>
   );
@@ -87,27 +61,30 @@ function App() {
 
 function Poster(props) {
   console.log(props);
-  return (<img src={props.title} alt="" />
+  return (
+  <div>
+  <img src={props.title} alt="" />
+  </div>
   );
 }
 
 function Bbc(props) {
   console.log(props);
   return (
-    <>
+    <div className="airbnbitems">
       <img src={props.image} alt="" />
       <h2>{props.headline}</h2>
       <p>{props.article}</p>
-    </>
+    </div>
   );
 }
 
 function Airbnb(props) {
   return (
-    <>
+    <div className="airbnbitems">
    <img src={props.image} alt=""/>
    <p>{props.bnbtitle}</p> 
-    </>
+    </div>
   )
 }
 export default App;
