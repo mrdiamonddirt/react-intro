@@ -21,11 +21,21 @@ function App() {
   return (
     <>
       <div className="images">
+        <div>
         <Poster title={netflixFate} />
+        </div>
+        <div>
         <Poster title={netflixGambit} />
+        </div>
+        <div>
         <Poster title={netflixOutside} />
+        </div>
+        <div>
         <Poster title={netflixStarTrek} />
+        </div>
+        <div>
         <Poster title={netflixWitcher} />
+        </div>
       </div>
       <div className="bbcarticles">
         <div className="bbcarticle">
@@ -77,10 +87,7 @@ function App() {
 
 function Poster(props) {
   console.log(props);
-  return (
-    <>
-      <img src={props.title} alt="" />
-    </>
+  return (<img src={props.title} alt="" />
   );
 }
 
@@ -98,7 +105,7 @@ function Bbc(props) {
 function Airbnb(props) {
   return (
     <>
-   <img src={props.image}/>
+   <img src={props.image} alt=""/>
    <p>{props.bnbtitle}</p> 
     </>
   )
