@@ -1,6 +1,3 @@
-.personCard {
-  background-color: blueviolet;
-}
-.Job{
-  background-color: aquamarine;
+.images{
+  display: flex;
 }

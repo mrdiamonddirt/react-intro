@@ -1,32 +1,23 @@
 import logo from './logo.svg';
 import './App.css';
 import './App.css' //import stylesheet
+import netflixFate from './images/netflixFate.png'
+import netflixGambit from './images/netflixGambit.png'
+import netflixOutside from './images/netflixOutside.png'
+import netflixStarTrek from './images/netflixStarTrek.png'
+import netflixWitcher from './images/netflixWitcher.png'
 
-const App = () => {
+
+function App() {
   return (
-  <div className="personCard">
-  <h1>I'm the root component</h1>
-  <Person name="Dan" age="34" title="chef"/>
-  <Person name="Stuart" age="30-something" title="dictator" />
-  <Person name="Ben" age="21" title="cleaner" />
-  </div>
-  );
-  }
-
-  const Person = (props) => {
-  return (
-    <>
-  <p> Hi I'm {props.name} </p>
-  <Job title={props.title}/>
-    </>
-  );
-  };
-
-function Job(props){
- return (
-  <p className="Job">i am a {props.title}</p>
- )
-
+    <div className="images">
+    <img  src={netflixFate} className="image1" alt=""/>
+    <img  src={netflixGambit} className="image2" alt=""/>
+    <img  src={netflixOutside} className="image3" alt=""/>
+    <img  src={netflixStarTrek} className="image4" alt=""/>
+    <img  src={netflixWitcher} className="image5" alt=""/>
+    </div>
+  )
 }
 
   export default App;
