@@ -14,9 +14,6 @@ import airbnbUnique from "./images/airbnbUnique.png";
 import airbnbCabin from "./images/airbnbCabin.png";
 import airbnbPets from "./images/airbnbPets.png";
 
-
-
-
 function App() {
   return (
     <>
@@ -47,24 +44,24 @@ function App() {
           image={bbcUnilever}
           headline={"this is the headline"}
           article={"this is the article"}
-          />
-          </div>
-          <div className="airbnb">
-            <Airbnb image={airbnbHome} bnbtitle={<b>Entire Homes</b>}/>
-            <Airbnb image={airbnbUnique} bnbtitle={<b>Unique Stays</b>}/>
-            <Airbnb image={airbnbCabin} bnbtitle={<b>Cabins and cottages</b>}/>
-            <Airbnb image={airbnbPets} bnbtitle={<b>Pets allowed</b>}/>
-          </div>
-        </>
+        />
+      </div>
+      <div className="airbnb">
+        <Airbnb image={airbnbHome} bnbtitle={<b>Entire Homes</b>}/>
+        <Airbnb image={airbnbUnique} bnbtitle={<b>Unique Stays</b>} />
+        <Airbnb image={airbnbCabin} bnbtitle={<b>Cabins and cottages</b>} />
+        <Airbnb image={airbnbPets} bnbtitle={<b>Pets allowed</b>} />
+      </div>
+    </>
   );
 }
 
 function Poster(props) {
   console.log(props);
   return (
-  <div>
-  <img src={props.title} alt="" />
-  </div>
+    <div>
+      <img src={props.title} alt="" />
+    </div>
   );
 }
 
@@ -82,9 +79,9 @@ function Bbc(props) {
 function Airbnb(props) {
   return (
     <div className="airbnbitems">
-   <img src={props.image} alt=""/>
-   <p>{props.bnbtitle}</p> 
+      <img src={props.image} alt="" />
+      <p>{props.bnbtitle}</p>
     </div>
-  )
+  );
 }
 export default App;
