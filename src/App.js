@@ -4,7 +4,7 @@ import './App.css' //import stylesheet
 
 const App = () => {
   return (
-  <div>
+  <div className="personCard">
   <h1>I'm the root component</h1>
   <Person name="Dan" age="34" title="chef"/>
   <Person name="Stuart" age="30-something" title="dictator" />
@@ -24,7 +24,7 @@ const App = () => {
 
 function Job(props){
  return (
-  <p>i am a {props.title}</p>
+  <p className="Job">i am a {props.title}</p>
  )
 
 }
