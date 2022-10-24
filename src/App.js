@@ -5,7 +5,7 @@ class App extends React.Component {
 
   render() {
 return (
-  <div className="app"></div>
+  <div className="app">
   <h1>Hello</h1>
   <person />
   </div>
@@ -16,5 +16,5 @@ return (
  const Person = () => {
   return <p> I'm a functional component</p>
  }
- 
+
 export default App;
