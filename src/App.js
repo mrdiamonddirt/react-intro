@@ -1,20 +1,22 @@
 import logo from './logo.svg';
 import './App.css';
 
-class App extends React.Component { 
-
-  render() {
-return (
-  <div className="app">
-  <h1>Hello</h1>
-  <person />
+const App = () => {
+  return (
+  <div>
+  <h1>I'm the root component</h1>
+  <Person name="Dan" age="34" />
+  <Person name="Stuart" age="30-something" />
+  <Person name="Ben" age="21" />
   </div>
   );
-}
-}
-
- const Person = () => {
-  return <p> I'm a functional component</p>
- }
+  }
+  
+  const Person = (props) => {
+  return (
+  <p> Hi I'm {props.name} and I'm {props.age} </p>
+  );
+  };
+  export
 
 export default App;
